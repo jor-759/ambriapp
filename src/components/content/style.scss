@@ -1,0 +1,120 @@
+.content{
+    .img-container{
+        .background-img{
+            width: 100%;
+            height: calc(100vh - 75px);
+            object-fit: cover;
+            filter: brightness(0.5);
+        }
+
+
+        .text-image{
+            position: absolute;
+            left: 3em;
+            color: white;
+            font-size: 4em;
+            bottom: 2em;
+            display: flex;
+            flex-direction: column;
+            .subtitle{
+                font-size: 25px;
+            }
+
+            .start-now{
+                width: 150px;
+                height: 50px;
+                border: none;
+                border-radius: 9px;
+                margin-top: 30px;
+                background-color: #ffe24a;
+                font-size: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+    .price-body{
+        display: flex;
+        justify-content: center;
+        margin: 3em 0px 3em 0px;
+    }
+
+    .about-us-body{
+        background-color: #f7f9fa;
+        padding: 4em 15em 5em 15em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-body{
+        padding: 5em 0em;
+    }
+
+    .whatsapp-icon{
+        width: 4em;
+        position: fixed;
+        height: 30px;
+        right: 20px;
+        z-index: 2;
+        bottom: 74px;
+        cursor: pointer;
+        svg{
+            .st0{fill:#25D366;}
+            .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+        }
+    }
+}
+
+
+@media screen and (max-width: 1500px){
+    .about-us-body{
+        padding: 4em 10em 5em 10em;
+    }
+}
+
+
+@media screen and (max-width: 1080px){
+    .text-image{
+        font-size: 2.5em !important;
+        flex-wrap: wrap;
+        margin-right: 3em;
+        left: 2em !important;
+    }
+}
+
+@media screen and  (max-width: 650px) {
+    .text-image{
+        font-size: 1.5em !important;
+
+        .subtitle{
+            font-size: 15px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .text-image{
+        margin-right: 10px;
+        row-gap: 5px;
+        left: 25px !important;
+
+        .title{
+            font-size: 24px !important;
+        }
+
+        .subtitle{
+            font-size: 13px !important;
+        }
+
+        .start-now{
+            width: 110px !important;
+            font-size: 12px !important;
+            height: 35px !important;
+        }
+    }
+
+    .about-us-body{
+        padding: 2em 4em !important;
+        font-size: 12px;
+    }
+}
+

@@ -1,0 +1,115 @@
+.header{
+    height: 65px;
+    display: flex;
+    margin: 10px 35px 0px 35px;
+    align-items: center;
+    .logo-header{
+        display: flex;
+        width: 30%;
+        flex: 1;
+        align-items: center;
+        margin-left: 160px;
+        .image-head{
+            width: 270px;
+            cursor: pointer;
+        }
+
+        .description-head{
+            font-weight: 500;
+            width: 132px;
+        }
+    }
+
+    .nav-header{
+        margin-right: 150px;
+        .ul-links{
+            display: flex;
+            list-style-type: none;
+            column-gap: 30px;
+
+            .li-link{
+                font-size: 18px;
+                span{
+                    text-decoration: none;
+                    color: black;
+                    cursor: pointer;
+                    &:hover{
+                        border-bottom: solid 1px;
+                        transition: border-bottom-width 1s linear;
+                    }
+                }
+                .selected{
+                    color: #0174d9;
+                    border-bottom: solid 1px #0174d9;
+                }
+            }
+          
+        }
+       
+    }
+
+    .menu-collapse{
+        display: none;
+        width: 30px;
+        .icon-menu{
+            enable-background:new 0 0 24 24;
+            .st0{
+                opacity:0.2;
+                fill:none;
+                stroke:#000000;
+                stroke-width:5.000000e-02;
+                stroke-miterlimit:10;
+            }
+
+        }
+    }
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 10px 0px 10px 0px;
+    margin: 0;
+    box-shadow: 10px 1px 5px 0 rgba(32, 33, 36, 0.28)
+}
+
+
+@media screen and (max-width: 1070px){
+    .header{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        justify-content: space-between;
+        width: auto;
+
+        .menu-collapse{
+            display: block !important;
+        }
+        .nav-header{
+            display: none !important; 
+        }
+
+        .logo-header{
+            margin-left: 0;
+
+            .image-head {
+                width: 222px;
+            }
+        }
+    }
+
+    .sticky{
+        padding: 10px 35px 0px 35px;
+        top: -1;
+    }
+}
+
+
+
+@media screen and (max-width: 350px){
+    .header > .logo-header > .image-head{
+        width: 160px;
+    }
+}

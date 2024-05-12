@@ -1,0 +1,31 @@
+.cost-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    row-gap: 3em;
+    scroll-margin-top: 75px;
+    .price-head {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        .head-title{
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        .head-description{
+            font-size: 13px;
+            color: #6d6d6d;
+        }
+    }
+    .price-content{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 40px 10px 10px 10px;
+        width: 80%;
+        flex-wrap: wrap;
+        column-gap: 1em;
+        row-gap: 3em;
+    }
+}

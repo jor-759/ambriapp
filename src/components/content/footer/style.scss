@@ -1,0 +1,55 @@
+.footer-content{
+    display: flex;
+    justify-content: center;
+    column-gap: 4em;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    padding: 0px 3em;
+    img{
+        width: 16em;
+        height: 4em;
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.6;
+        align-items: center;
+        .street, .mail-phone{
+            color: #6b7280;
+        }
+    }
+
+    .links{
+        display: flex;
+        align-items: center;
+        ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            column-gap: 3em;
+            padding-inline-start: 0;
+            align-items: center;
+            li{
+                text-decoration: underline;
+                cursor: pointer;
+                font-size: 0.875rem;
+            }
+        }
+        
+    }
+
+    .copyright{
+        display: flex;
+        align-items: center;
+        color: #6b7280;
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .information{
+        font-size: 12px;
+    }
+}
